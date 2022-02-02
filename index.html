@@ -36,7 +36,14 @@
               <h4>Precio $ 2500</h4>
               <div>
                 <!-- form que envia la info al backend -->
-                <form action="">
+                <form action="http://localhost:3000/checkout" method="post">
+                  <input type="hidden" name="price" value="2500" />
+                  <input
+                    type="hidden"
+                    name="title"
+                    value="Remera de mujer manga corta"
+                  />
+
                   <input
                     type="submit"
                     value="Comprar ahora"
